@@ -1,0 +1,21 @@
+[package]
+name = "radix_route_matcher"
+version = "0.1.0"
+edition = "2021"
+authors = ["ChadCao"]
+description = "A high-performance route matching library based on Radix Tree"
+license = "MIT"
+repository = "https://github.com/ChadCao/radix_route_matcher"
+keywords = ["radix-tree", "router", "route-matching", "prefix-matching"]
+categories = ["algorithms", "data-structures"]
+
+[lib]
+name = "radix_route_matcher"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+libc = "0.2"
+
+[build-dependencies]
+cc = "1.0"
+
